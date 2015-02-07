@@ -1,0 +1,173 @@
+import nltk
+import json
+import os, math, operator
+from nltk import FreqDist
+from nltk.corpus import PlaintextCorpusReader
+from nltk import sent_tokenize, word_tokenize
+import pickle
+from operator import itemgetter
+
+
+def get_all_files(path):
+	files=PlaintextCorpusReader(path,'.*')
+	return files.fileids()
+
+def load_file_sentences(filename):
+	string_sentence = open(filename,'r').read()
+	return [sen.lower() for sen in sent_tokenize(string_sentence)]
+
+def load_collection_sentences(path):
+	res=[]
+	for i in get_all_files(path):
+		res.extend(load_file_sentences(os.path.join(path,i)))
+	return res
+
+def load_file_tokens(filename):
+	line = open(filename,'r').read()
+	return [token.lower() for token in word_tokenize(line)]
+	
+def load_collection_tokens(path):
+	res=[]
+	for i in get_all_files(path):
+		res.extend(load_file_tokens(os.path.join(path,i)))
+	return res
+
+def get_idf(dir):
+	df_dict = {}
+	full=list(set(load_collection_tokens(dir)))
+	for vocab in full: df_dict[vocab]=0
+	files = get_all_files(dir); N = len(files)
+	for i in files:
+		toks=list(set(load_file_tokens(os.path.join(dir,i))))
+		for j in toks: df_dict[j] +=1;
+	idf_dict =  dict((word,math.log(N/df_dict[word])) for word in df_dict)
+	
+	with open('idf_dict.pickle','wb') as handle:
+		pickle.dump(idf_dict,handle)
+
+	return
+
+def get_tf(path):   
+	freqs = FreqDist(get_dir_words(path))
+	word_count = sum(freqs.values())
+	df_dict = dict((x, (freqs[x]+0.0)) for x in freqs)
+	return df_dict
+
+def get_tfidf(tf_dict, idf_dict):
+	for i in tf_dict.keys():
+		if i not in idf_dict.keys():
+			idf_dict[i]=0
+	tfidf = dict((word, tf_dict[word]*idf_dict[word]) for word in tf_dict)
+	return tfidf
+
+def create_feature_space(sentences):
+	tokens = [word_tokenize(s) for s in sentences]
+	vocabulary = set(reduce(lambda x, y: x + y, tokens))
+	return dict([(voc, i) for (i, voc) in enumerate(vocabulary)])
+
+def vectorize_w(feature_space, vocabulary,tfidf):
+	vectors = [0] * len(feature_space)	
+	for word in vocabulary:
+		if (feature_space.has_key(word) and tfidf.has_key(word)):
+			vectors[feature_space[word]] = 1*tfidf[word]
+		else :
+			vectors[feature_space[word]] = 0
+	return vectors
+
+def vectorize(feature_space, sentence,tfidf):
+	return vectorize_w(feature_space, list(set(word_tokenize(sentence))),tfidf)
+
+
+
+def get_dir_words(path):
+	if (os.path.isdir(path)):
+		return load_collection_tokens(path);
+	return load_file_tokens(path)
+
+def list_mult(A, B):
+	return map(lambda (x,y): x*y, zip(A,B))
+
+
+def sum_v(A):
+	A2 = [a*a for a in A]
+	return sum(A2)
+
+def cosine_similarity(A, B):
+	if (sum(A)*sum(B) == 0): return 0
+	return float(sum(list_mult(A,B))) / math.sqrt(float(sum_v(A)*sum_v(B)))
+
+def get_adjacency_dict(path,threshold):
+        idf_dict=pickle.load(open('idf_dict.pickle','rb'))
+        tf=get_tf(path)
+        tfidf=get_tfidf(tf,idf_dict)
+        sents=load_collection_sentences(path)
+        feature_space=create_feature_space(sents)
+	vector_dictionary={}
+	for i  in sents:
+		vector_dictionary[i]=vectorize(feature_space,i,tfidf)
+        cosine_similarity_dict={}
+	for sent1 in sents:
+		for sent2 in sents:
+			if sent1 != sent2:
+				cos=cosine_similarity(vector_dictionary[sent1],vector_dictionary[sent2])
+				key=sent1+'--->'+sent2
+				if cos>threshold:
+					cosine_similarity_dict[key]=1 
+       				else :
+					cosine_similarity_dict[key]=0
+	return cosine_similarity_dict
+
+def get_neighbours(dict_matrix,item):
+	neighbours=[]
+	for i in dict_matrix.keys():
+		j=i.split('--->')
+		if item == j[0] and dict_matrix[i]==1:
+			neighbours.append(j[1])
+	return neighbours
+
+
+def page_rank(path,sim,damp):
+	sents=load_collection_sentences(path)
+	norm=float(1.0/len(sents))
+	sim_norm={}
+	minval=float(1.0-damp)/len(sents)
+	iter_rec={}
+	for i in sents:
+		sim_norm[i]=norm
+		iter_rec[i]=norm
+	for iteration in range(10):
+		for j in sents:
+			neighbours=get_neighbours(sim,j)
+			length=len(neighbours)
+			a=0
+			for k in neighbours:
+				a=a+iter_rec[k]
+			if length == 0:
+				sim_norm[j]=iter_rec[j]
+			else:
+				sim_norm[j]=(1-damp)*norm + damp*float(a/length)
+		for i in iter_rec.keys():
+			iter_rec[i]=sim_norm[i]
+	
+	return sim_norm
+
+
+
+
+if __name__ == '__main__':
+	#get_idf('/home1/c/cis530/final_project/nyt_docs')
+	cos=get_adjacency_dict('/home1/c/cis530/final_project/dev_input/dev_00',0.65)
+	pr=page_rank('/home1/c/cis530/final_project/dev_input/dev_00',cos,0.85)
+	f = open('summary00.txt','w')
+	sorted_x = sorted(pr,key=itemgetter(1),reverse = True)
+	length =0
+	answer=[]
+	for item in sorted_x:
+		if((length + len(word_tokenize(item)))<=100 and item not in answer):
+			f.write(item)
+			length=length+len(word_tokenize(item))
+			answer.append(item)
+	f.close()	
+	#print get_neighbours(cos,'these are considered universal crimes, he said.\r\n')
+
+

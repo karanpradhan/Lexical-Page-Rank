@@ -1,0 +1,762 @@
+<ROUGE-EVAL version="1.0">
+<EVAL ID="1">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary00.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_00_model.B.txt</M>
+<M ID="B">dev_00_model.C.txt</M>
+<M ID="C">dev_00_model.D.txt</M>
+<M ID="D">dev_00_model.E.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="2">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary01.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_01_model.F.txt</M>
+<M ID="B">dev_01_model.G.txt</M>
+<M ID="C">dev_01_model.H.txt</M>
+<M ID="D">dev_01_model.I.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="3">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary02.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_02_model.A.txt</M>
+<M ID="B">dev_02_model.B.txt</M>
+<M ID="C">dev_02_model.C.txt</M>
+<M ID="D">dev_02_model.D.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="4">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary03.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_03_model.A.txt</M>
+<M ID="B">dev_03_model.B.txt</M>
+<M ID="C">dev_03_model.C.txt</M>
+<M ID="D">dev_03_model.J.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="5">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary04.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_04_model.F.txt</M>
+<M ID="B">dev_04_model.G.txt</M>
+<M ID="C">dev_04_model.H.txt</M>
+<M ID="D">dev_04_model.I.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="6">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary05.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_05_model.E.txt</M>
+<M ID="B">dev_05_model.F.txt</M>
+<M ID="C">dev_05_model.G.txt</M>
+<M ID="D">dev_05_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="7">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary06.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_06_model.D.txt</M>
+<M ID="B">dev_06_model.E.txt</M>
+<M ID="C">dev_06_model.F.txt</M>
+<M ID="D">dev_06_model.G.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="8">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary07.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_07_model.A.txt</M>
+<M ID="B">dev_07_model.H.txt</M>
+<M ID="C">dev_07_model.I.txt</M>
+<M ID="D">dev_07_model.J.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="9">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary08.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_08_model.G.txt</M>
+<M ID="B">dev_08_model.H.txt</M>
+<M ID="C">dev_08_model.I.txt</M>
+<M ID="D">dev_08_model.J.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="10">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary09.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_09_model.B.txt</M>
+<M ID="B">dev_09_model.C.txt</M>
+<M ID="C">dev_09_model.D.txt</M>
+<M ID="D">dev_09_model.E.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="11">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary10.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_10_model.A.txt</M>
+<M ID="B">dev_10_model.B.txt</M>
+<M ID="C">dev_10_model.C.txt</M>
+<M ID="D">dev_10_model.D.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="12">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary11.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_11_model.A.txt</M>
+<M ID="B">dev_11_model.B.txt</M>
+<M ID="C">dev_11_model.C.txt</M>
+<M ID="D">dev_11_model.J.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="13">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary12.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_12_model.E.txt</M>
+<M ID="B">dev_12_model.F.txt</M>
+<M ID="C">dev_12_model.G.txt</M>
+<M ID="D">dev_12_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="14">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary13.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_13_model.A.txt</M>
+<M ID="B">dev_13_model.B.txt</M>
+<M ID="C">dev_13_model.I.txt</M>
+<M ID="D">dev_13_model.J.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="15">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary14.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_14_model.C.txt</M>
+<M ID="B">dev_14_model.D.txt</M>
+<M ID="C">dev_14_model.E.txt</M>
+<M ID="D">dev_14_model.F.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="16">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary15.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_15_model.A.txt</M>
+<M ID="B">dev_15_model.B.txt</M>
+<M ID="C">dev_15_model.C.txt</M>
+<M ID="D">dev_15_model.E.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="17">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary16.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_16_model.A.txt</M>
+<M ID="B">dev_16_model.B.txt</M>
+<M ID="C">dev_16_model.D.txt</M>
+<M ID="D">dev_16_model.G.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="18">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary17.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_17_model.A.txt</M>
+<M ID="B">dev_17_model.B.txt</M>
+<M ID="C">dev_17_model.E.txt</M>
+<M ID="D">dev_17_model.F.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="19">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary18.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_18_model.A.txt</M>
+<M ID="B">dev_18_model.B.txt</M>
+<M ID="C">dev_18_model.E.txt</M>
+<M ID="D">dev_18_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="20">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary19.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_19_model.A.txt</M>
+<M ID="B">dev_19_model.B.txt</M>
+<M ID="C">dev_19_model.F.txt</M>
+<M ID="D">dev_19_model.G.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="21">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary20.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_20_model.A.txt</M>
+<M ID="B">dev_20_model.C.txt</M>
+<M ID="C">dev_20_model.D.txt</M>
+<M ID="D">dev_20_model.E.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="22">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary21.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_21_model.A.txt</M>
+<M ID="B">dev_21_model.C.txt</M>
+<M ID="C">dev_21_model.D.txt</M>
+<M ID="D">dev_21_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="23">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary22.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_22_model.A.txt</M>
+<M ID="B">dev_22_model.D.txt</M>
+<M ID="C">dev_22_model.E.txt</M>
+<M ID="D">dev_22_model.F.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="24">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary23.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_23_model.A.txt</M>
+<M ID="B">dev_23_model.D.txt</M>
+<M ID="C">dev_23_model.F.txt</M>
+<M ID="D">dev_23_model.G.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="25">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary24.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_24_model.A.txt</M>
+<M ID="B">dev_24_model.D.txt</M>
+<M ID="C">dev_24_model.G.txt</M>
+<M ID="D">dev_24_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="26">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary25.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_25_model.B.txt</M>
+<M ID="B">dev_25_model.C.txt</M>
+<M ID="C">dev_25_model.D.txt</M>
+<M ID="D">dev_25_model.F.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="27">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary26.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_26_model.B.txt</M>
+<M ID="B">dev_26_model.C.txt</M>
+<M ID="C">dev_26_model.D.txt</M>
+<M ID="D">dev_26_model.G.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="28">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary27.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_27_model.B.txt</M>
+<M ID="B">dev_27_model.C.txt</M>
+<M ID="C">dev_27_model.E.txt</M>
+<M ID="D">dev_27_model.F.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="29">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary28.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_28_model.B.txt</M>
+<M ID="B">dev_28_model.C.txt</M>
+<M ID="C">dev_28_model.G.txt</M>
+<M ID="D">dev_28_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="30">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary29.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_29_model.B.txt</M>
+<M ID="B">dev_29_model.D.txt</M>
+<M ID="C">dev_29_model.E.txt</M>
+<M ID="D">dev_29_model.G.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="31">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary30.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_30_model.B.txt</M>
+<M ID="B">dev_30_model.D.txt</M>
+<M ID="C">dev_30_model.F.txt</M>
+<M ID="D">dev_30_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="32">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary31.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_31_model.B.txt</M>
+<M ID="B">dev_31_model.E.txt</M>
+<M ID="C">dev_31_model.F.txt</M>
+<M ID="D">dev_31_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="33">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary32.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_32_model.B.txt</M>
+<M ID="B">dev_32_model.F.txt</M>
+<M ID="C">dev_32_model.G.txt</M>
+<M ID="D">dev_32_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="34">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary33.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_33_model.C.txt</M>
+<M ID="B">dev_33_model.D.txt</M>
+<M ID="C">dev_33_model.E.txt</M>
+<M ID="D">dev_33_model.G.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="35">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary34.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_34_model.B.txt</M>
+<M ID="B">dev_34_model.C.txt</M>
+<M ID="C">dev_34_model.F.txt</M>
+<M ID="D">dev_34_model.G.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="36">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary35.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_35_model.C.txt</M>
+<M ID="B">dev_35_model.D.txt</M>
+<M ID="C">dev_35_model.G.txt</M>
+<M ID="D">dev_35_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="37">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary36.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_36_model.C.txt</M>
+<M ID="B">dev_36_model.E.txt</M>
+<M ID="C">dev_36_model.F.txt</M>
+<M ID="D">dev_36_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="38">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary37.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_37_model.D.txt</M>
+<M ID="B">dev_37_model.E.txt</M>
+<M ID="C">dev_37_model.F.txt</M>
+<M ID="D">dev_37_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="39">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary38.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_38_model.D.txt</M>
+<M ID="B">dev_38_model.E.txt</M>
+<M ID="C">dev_38_model.G.txt</M>
+<M ID="D">dev_38_model.H.txt</M>
+</MODELS>
+</EVAL>
+<EVAL ID="40">
+<PEER-ROOT>
+/home1/k/karanpr/Desktop/Project/input_summary
+</PEER-ROOT>
+<MODEL-ROOT>
+/home1/c/cis530/final_project/dev_models
+</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL">
+</INPUT-FORMAT>
+<PEERS>
+<P ID="baseline">summary39.txt</P>
+</PEERS>
+<MODELS>
+<M ID="A">dev_39_model.E.txt</M>
+<M ID="B">dev_39_model.F.txt</M>
+<M ID="C">dev_39_model.G.txt</M>
+<M ID="D">dev_39_model.H.txt</M>
+</MODELS>
+</EVAL>
+</ROUGE-EVAL>
